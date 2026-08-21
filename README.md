@@ -1,26 +1,26 @@
 # Project Euler Python
 
-Bu repository, Project Euler problemlerini Python kullanarak çözerken
-algoritmik düşünme ve problem çözme becerilerimi geliştirmek için oluşturuldu.
+A repository for solving Project Euler problems using Python while improving
+algorithmic thinking, problem-solving skills, and writing clean code.
 
-## Amaç
+## Goals
 
-- Python becerilerimi geliştirmek
-- Algoritma tasarlama yeteneğimi artırmak
-- Matematiksel problemleri programlama ile çözmeyi öğrenmek
-- Temiz ve okunabilir kod yazma alışkanlığı kazanmak
+- Improve Python programming skills
+- Develop algorithmic thinking
+- Learn mathematical problem solving with code
+- Build clean and readable solutions
 
-## Çalışma Prensibi
+## Workflow
 
-Her problem için:
+For each problem:
 
-1. Problemi anlamaya çalışırım.
-2. Kendi algoritma fikrimi oluştururum.
-3. Çözümü Python ile uygularım.
-4. Kodumu analiz ederim.
-5. Öğrendiklerimi not ederim.
+1. Understand the problem.
+2. Design an algorithm.
+3. Implement the solution in Python.
+4. Analyze time and space complexity.
+5. Document the approach.
 
-## Kullanılan Teknolojiler
+## Technologies
 
 - Python
 - VS Code
@@ -28,7 +28,7 @@ Her problem için:
 - GitHub
 - Ubuntu Linux
 
-## Klasör Yapısı
+## Project Structure
 
 ```text
 project-euler-python/
@@ -36,12 +36,4 @@ project-euler-python/
 ├── problem_001.py
 ├── problem_002.py
 ├── notes/
-│   ├── problem_001.md
-│   └── problem_002.md
 └── README.md
-```
-
-## Öğrenme Notları
-
-Bu repository sadece cevapları saklamak için değil,
-problem çözme sürecimi ve gelişimimi takip etmek için tutulmaktadır.
