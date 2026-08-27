@@ -1,25 +1,17 @@
 """
 Project Euler Problem 0
 
-Problem:
-Find the sum of all odd square numbers among the first 488000 square numbers.
-
 Approach:
-A square number is odd if and only if its root is odd.
-Instead of checking every square number, we iterate only through odd roots:
-
-1, 3, 5, ..., 487999
-
-For each root, calculate its square and add it to the total.
+Only iterate through odd roots, since a square is odd
+if and only if its root is odd.
 
 Complexity:
-Time Complexity: O(n)
-Space Complexity: O(1)
+Time: O(n)
+Space: O(1)
 
 Optimization:
-A mathematical formula could solve this in O(1),
-but this iterative solution is efficient enough for the given input size
-and keeps the algorithm clear.
+Can be solved in O(1) using a mathematical formula
+for the sum of odd squares.
 """
 
 
