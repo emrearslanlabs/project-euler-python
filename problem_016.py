@@ -20,7 +20,7 @@ keeping the solution concise while reducing unnecessary memory usage.
 """
 
 
-number = 2 ** 1000
+number = 2 ** 1_000
 digit_sum = sum(int(digit) for digit in str(number))
 
 print(digit_sum)

@@ -18,10 +18,12 @@ the odd terms and generate only the even-valued Fibonacci numbers.
 """
 
 
+limit = 4_000_000
+
 current, next_number = 1, 2
 total = 0
 
-while current <= 4_000_000:
+while current <= limit:
     if current % 2 == 0:
         total += current
 

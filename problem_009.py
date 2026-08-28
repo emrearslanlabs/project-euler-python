@@ -18,11 +18,13 @@ to a single loop.
 """
 
 
-target_sum = 1000
+target_sum = 1_000
 
-for a in range(1, target_sum // 3 + 1):
+for a in range(1, target_sum // 3):
     for b in range(a + 1, (target_sum - a + 1) // 2):
         c = target_sum - a - b
 
         if a ** 2 + b ** 2 == c ** 2:
-            print(a * b * c)
+            product = a * b * c
+            print(product)
+            break

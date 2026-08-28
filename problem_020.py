@@ -29,9 +29,6 @@ product = 1
 for factor in range(2, limit + 1):
     product *= factor
 
-digit_sum = 0
-
-for digit in str(product):
-    digit_sum += int(digit)
+digit_sum = sum(int(digit) for digit in str(product))
 
 print(digit_sum)

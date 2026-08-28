@@ -15,9 +15,8 @@ for the sum of odd squares.
 """
 
 
-total = 0
+limit = 488_000
 
-for root in range(1, 488000, 2):
-    total += root ** 2
+total = sum(root ** 2 for root in range(1, limit, 2))
 
 print(total)

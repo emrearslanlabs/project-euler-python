@@ -14,10 +14,12 @@ Can be solved in O(1) using arithmetic series and inclusion-exclusion.
 """
 
 
-total = 0
+limit = 1_000
 
-for number in range(1, 1000):
-    if number % 3 == 0 or number % 5 == 0:
-        total += number
+total = sum(
+    number
+    for number in range(1, limit)
+    if number % 3 == 0 or number % 5 == 0
+)
 
 print(total)

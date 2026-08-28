@@ -18,14 +18,15 @@ natural numbers and the sum of their squares.
 """
 
 
-sum_of_squares = 0
-sum_of_numbers = 0
+limit = 100
 
-for number in range(1, 101):
-    sum_of_squares += number ** 2
-    sum_of_numbers += number
+sum_of_squares = sum(
+    number ** 2
+    for number in range(1, limit + 1)
+)
 
-square_of_sum = sum_of_numbers ** 2
+square_of_sum = sum(range(1, limit + 1)) ** 2
+
 difference = square_of_sum - sum_of_squares
 
 print(difference)
