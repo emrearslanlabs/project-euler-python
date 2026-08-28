@@ -1,13 +1,30 @@
-sayi1, sayi2 = 1,2
+"""
+Project Euler Problem 2
 
-toplam = 2
+Approach:
+Generate Fibonacci numbers iteratively while keeping only the current
+and next terms.
 
-while (sayi1 + sayi2 < 4000000):
-    sayi3 = sayi1 + sayi2
+For each Fibonacci term that does not exceed 4,000,000, check whether
+it is even and add it to the total if necessary.
 
-    if sayi3 % 2 == 0:
-        toplam += sayi3
+Complexity:
+Time: O(log n)
+Space: O(1)
 
-    sayi1, sayi2 = sayi2, sayi3
+Optimization:
+Every third Fibonacci number is even, so the solution could skip
+the odd terms and generate only the even-valued Fibonacci numbers.
+"""
 
-print(toplam)
+
+current, next_number = 1, 2
+total = 0
+
+while current <= 4_000_000:
+    if current % 2 == 0:
+        total += current
+
+    current, next_number = next_number, current + next_number
+
+print(total)
