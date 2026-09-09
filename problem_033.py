@@ -1,3 +1,28 @@
+"""
+Project Euler Problem 33
+
+Approach:
+Check all two-digit fractions less than 1 and ignore trivial cases
+where the numerator or denominator ends in 0.
+
+For each fraction, find a common digit between the numerator and
+denominator, remove one occurrence of that digit from both numbers,
+and compare the reduced fraction with the original using
+cross-multiplication.
+
+Multiply the numerators and denominators of all valid fractions, then
+reduce the final product using the Euclidean algorithm.
+
+Complexity:
+Time: O(n^2)
+Space: O(1)
+
+Optimization:
+Restrict the denominator to values greater than the numerator and use
+cross-multiplication instead of floating-point division.
+"""
+
+
 def gcd(x, y):
     while y != 0:
         x, y = y, x % y
@@ -42,11 +67,8 @@ for numerator in range(10, 100):
             numerator * reduced_denominator
             == denominator * reduced_numerator
         ):
-            print(numerator, denominator)
-
             numerator_product *= numerator
             denominator_product *= denominator
-
 
 common_divisor = gcd(
     numerator_product,
