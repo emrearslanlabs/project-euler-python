@@ -25,6 +25,7 @@ numbers in advance.
 
 import csv
 from math import isqrt
+from pathlib import Path
 
 
 def word_value(word):
@@ -41,7 +42,9 @@ def is_triangle(number):
     return root * root == discriminant
 
 
-with open("0042_words.txt", newline="", encoding="utf-8") as file:
+data_file = Path(__file__).with_name("0042_words.txt")
+
+with data_file.open(newline="", encoding="utf-8") as file:
     words = next(csv.reader(file))
 
 

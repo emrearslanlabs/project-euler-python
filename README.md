@@ -53,3 +53,30 @@ Each `problem_XXX.py` file contains the solution for the corresponding Project E
 ## Progress
 
 Solutions are added progressively as I work through Project Euler problems.
+
+
+## Running solutions
+
+Python 3.8 or later is required (`math.comb` and `math.isqrt` are used).
+All solutions use the Python standard library; no packages are required.
+
+```bash
+python3 problem_043.py
+```
+
+Problems 22 and 42 load their data next to the script, so they can also
+be run from another directory. `problem_000.py` is a practice exercise,
+not an official Project Euler problem.
+
+## Verification
+
+Run the regression checks for every solution:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+The checks run each script from a temporary directory and compare its
+output with an independently specified expected answer. Each script has
+a 60-second timeout. Problem 39 uses a cubic search and can take longer
+than the other solutions.

@@ -23,6 +23,7 @@ and use enumerate(..., start=1) for the problem's 1-based positions.
 """
 
 import csv
+from pathlib import Path
 
 
 def word_value(word):
@@ -32,7 +33,9 @@ def word_value(word):
     )
 
 
-with open("0022_names.txt", newline="", encoding="utf-8") as file:
+data_file = Path(__file__).with_name("0022_names.txt")
+
+with data_file.open(newline="", encoding="utf-8") as file:
     names = next(csv.reader(file))
 
 names.sort()

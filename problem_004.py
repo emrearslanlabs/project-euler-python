@@ -32,8 +32,8 @@ def is_palindrome(number):
 
 largest_palindrome = 0
 
-for first in range(999, 100, -1):
-    for second in range(first, 100, -1):
+for first in range(999, 99, -1):
+    for second in range(first, 99, -1):
         product = first * second
 
         if product <= largest_palindrome:
